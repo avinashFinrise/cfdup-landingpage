@@ -22,15 +22,21 @@ const Hero = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          {/* Main Heading */}
+          {/* Main Heading + New Taglines */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="mb-6"
           >
-            <h1 className="font-poppins font-bold text-4xl sm:text-5xl lg:text-7xl text-foreground mb-4 text-balance leading-tight">
-              Trade{' '}
+            {/* New pre-headline */}
+            <p className="text-sm sm:text-base uppercase tracking-wide text-muted-foreground mb-2">
+              Technology partner for the future trader
+            </p>
+
+            {/* Main Heading */}
+            <h1 className="font-poppins font-bold text-4xl sm:text-5xl lg:text-7xl text-foreground mb-2 text-balance leading-tight">
+              Born to trade{' '}
               <span className="text-primary">Smarter.</span>
               <br />
               Trade{' '}
@@ -41,17 +47,31 @@ const Hero = () => {
                 CFDUP
               </span>
             </h1>
+
+            {/* New secondary headline */}
+            {/* <h2 className="mt-1 font-poppins font-semibold text-lg sm:text-2xl text-primary">
+              Born To Trade
+            </h2> */}
+
+            {/* New small tagline */}
+            <p className="mt-2 text-sm sm:text-base text-muted-foreground">
+              Welcoming traders from India
+            </p>
           </motion.div>
 
-          {/* Subtitle */}
+          {/* Subtitle with highlighted instruments */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed"
           >
-            Your trusted partner in global CFD trading. Access Forex, Indices, Commodities,
-            and Stocks on MT5 and our proprietary WebTrader with ultra-tight spreads and up to 1:500 leverage.
+            Your trusted partner in global CFD trading. Access{' '}
+            <span className="font-semibold text-primary">Forex</span>,{' '}
+            <span className="font-semibold text-primary">Indices</span>,{' '}
+            <span className="font-semibold text-primary">Commodities</span>, and{' '}
+            <span className="font-semibold text-primary">Stocks</span> on MT5 and our
+            proprietary WebTrader with ultra-tight spreads and up to <span className="font-semibold text-primary">1:500</span> leverage.
           </motion.p>
 
           {/* CTA Buttons */}

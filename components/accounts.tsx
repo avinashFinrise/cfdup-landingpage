@@ -5,64 +5,82 @@ import { CheckCircle, Star, Shield, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+
 const Accounts = () => {
-  const accounts = [
-    {
-      type: "DEMO",
-      title: "Free",
-      subtitle: "risk-free practice",
-      price: "$100",
-      description: "Start trading with just $500",
-      features: ["Minimum Deposit $100", "Leverage Up to 1:500", "Bonuses Available"],
-      badge: "DEMO",
-      popular: false,
-      icon: <Zap className="h-8 w-8 text-primary" />,
-    },
-    {
-      type: "RETAIL",
-      title: "$100",
-      subtitle: "Start trading with just $500",
-      price: "1:500",
-      description: 'Establish volume traders "Advanced 1:500"',
-      features: ["Minimum Deposit $100", "Leverage Up to 1:500", "Bonuses Available"],
-      badge: "RETAIL",
-      popular: true,
-      icon: <Star className="h-8 w-8 text-yellow-400" />,
-    },
-    {
-      type: "PROFESSIONAL",
-      title: "Up to 1:500",
-      subtitle: 'Establish volume traders "Advanced 1:500"',
-      price: "Compliant",
-      description: "accounts with 0 swap charges",
-      features: ["Minimum Deposit $100", "Leverage Up to 1:500", "Bonuses Available"],
-      badge: "PROFESSIONAL",
-      popular: false,
-      icon: <Shield className="h-8 w-8 text-sky-400" />,
-    },
-    {
-      type: "BONUSES",
-      title: "Available",
-      subtitle: "",
-      price: "Compliant",
-      description: "accounts with 0 swap charges",
-      features: ["Minimum Deposit $100", "Leverage Up to 1:500", "Bonuses Available"],
-      badge: "BONUSES",
-      popular: false,
-      icon: <CheckCircle className="h-8 w-8 text-purple-400" />,
-    },
-    {
-      type: "ISLAMIC",
-      title: "Compliant",
-      subtitle: "accounts with 0 swap charges",
-      price: "",
-      description: "",
-      features: ["Minimum Deposit $100", "Leverage Up to 1:500", "Bonuses Available"],
-      badge: "ISLAMIC (SWAP-FREE)",
-      popular: false,
-      icon: <Shield className="h-8 w-8 text-cyan-400" />,
-    },
-  ];
+
+const accounts = [
+  {
+    type: "STANDARD",
+    title: "Standard",
+    subtitle: "Low minimum deposit with no commission.",
+    price: "",
+    description: "Low minimum deposit with no commission.",
+    features: [
+      "Min deposit: 10 USD",
+      "Min spread: 0.20 pips",
+      "Max leverage: 1:2000",
+      "Commission: No commission"
+    ],
+    badge: "STANDARD",
+    popular: false,
+    icon: <Zap className="h-8 w-8 text-primary" />
+  },
+  {
+    type: "PRO",
+    title: "Pro",
+    subtitle: "Tighter spreads and no commission.",
+    price: "",
+    description: "Tighter spreads and no commission.",
+    features: [
+      "Min deposit: 300 USD",
+      "Min spread: 0.10 pips",
+      "Max leverage: 1:2000",
+      "Commission: No commission"
+    ],
+    badge: "PRO",
+    popular: true,
+    icon: <Star className="h-8 w-8 text-yellow-400" />
+  },
+  {
+    type: "ZERO",
+    title: "Zero",
+    subtitle: "Spreads from 0 pips on top instruments.",
+    price: "",
+    description: "Spreads from 0 pips on top instruments.",
+    features: [
+      "Max deposit: 10000 USD",
+      "Min spread: 0.0 pips",
+      "Max leverage: 1:2000",
+      "Commission: From 0.05 USD per lot/side"
+    ],
+    badge: "ZERO",
+    popular: false,
+    icon: <Shield className="h-8 w-8 text-sky-400" />
+  },
+  {
+    type: "BONUSES",
+    title: "Available",
+    subtitle: "",
+    price: "Compliant",
+    description: "accounts with 0 swap charges",
+    features: ["Minimum Deposit $100", "Leverage Up to 1:500", "Bonuses Available"],
+    badge: "BONUSES",
+    popular: false,
+    icon: <CheckCircle className="h-8 w-8 text-purple-400" />
+  },
+  {
+    type: "ISLAMIC",
+    title: "Compliant",
+    subtitle: "accounts with 0 swap charges",
+    price: "",
+    description: "",
+    features: ["Minimum Deposit $100", "Leverage Up to 1:500", "Bonuses Available"],
+    badge: "ISLAMIC (SWAP-FREE)",
+    popular: false,
+    icon: <Shield className="h-8 w-8 text-cyan-400" />
+  }
+];
+
 
   return (
     <section id="accounts" className="py-20 bg-secondary/30">

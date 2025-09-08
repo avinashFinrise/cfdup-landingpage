@@ -1,57 +1,71 @@
 "use client"
 
 import { motion } from 'framer-motion';
-import { 
-  Zap, 
-  Shield, 
-  Clock, 
-  Target, 
-  TrendingUp, 
-  Users, 
-  Award, 
-  Headphones 
-} from 'lucide-react';
+import {
+  Target,
+  RefreshCw,
+  BarChart2,
+  Clock,
+  Shield,
+  Headphones,
+  Monitor,
+  Code
+} from "lucide-react";
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Features = () => {
   const features = [
     {
-      icon: <Zap className="h-8 w-8 text-primary" />,
-      title: 'Ultra-Low Spreads',
-      description: 'Starting from 0.0 pips',
-      details: 'Get the tightest spreads in the market for maximum profitability.'
+      icon: <Target className="h-8 w-8 text-primary" />,
+      title: "Instant withdrawals",
+      description: "T&Cs apply",
+      details: "Fast and reliable withdrawals - processed quickly with transparent T&Cs."
     },
     {
-      icon: <TrendingUp className="h-8 w-8 text-primary" />,
-      title: 'High Leverage',
-      description: 'Up to 1:500',
-      details: 'Maximize your trading potential with flexible leverage options.'
+      icon: <RefreshCw className="h-8 w-8 text-primary" />,
+      title: "Swap-free trading",
+      description: "Hold overnight positions for free",
+      details: "Hold overnight positions for free on most popular assets. T&Cs apply."
+    },
+    {
+      icon: <BarChart2 className="h-8 w-8 text-primary" />,
+      title: "Tight spreads",
+      description: "Spreads that stay tight and stable",
+      details: "Trade with spreads that remain tight and stable, even during market-moving news."
     },
     {
       icon: <Clock className="h-8 w-8 text-primary" />,
-      title: 'Fast Execution',
-      description: 'Millisecond order processing',
-      details: 'Lightning-fast execution to never miss a trading opportunity.'
+      title: "Unmatched speed, less slippage",
+      description: "Most precise execution in the market",
+      details: "Trade with the most precise execution² in the market to reduce slippage and missed fills."
     },
     {
       icon: <Shield className="h-8 w-8 text-primary" />,
-      title: 'Trusted Platforms',
-      description: 'MT5 + Proprietary',
-      details: 'Trade on industry-leading platforms with advanced tools.'
-    },
-    {
-      icon: <Target className="h-8 w-8 text-primary" />,
-      title: 'Instant Deposits',
-      description: 'With minimal fees',
-      details: 'Quick and secure deposits and withdrawals 24/7.'
+      title: "Best-in-class security",
+      description: "Funds held in segregated accounts",
+      details: "Trade knowing your funds are kept safe in separate client accounts."
     },
     {
       icon: <Headphones className="h-8 w-8 text-primary" />,
-      title: '24/7 Support',
-      description: 'Multilingual assistance',
-      details: 'Expert support team available around the clock.'
+      title: "24/7 live support",
+      description: "Get answers in minutes",
+      details: "Get answers in minutes via phone, live chat or email, in 14 languages."
+    },
+    {
+      icon: <Monitor className="h-8 w-8 text-primary" />,
+      title: "Trading platform",
+      description: "Web, Mobile & Desktop with MT5",
+      details: "Trade confidently with Web, Mobile and Desktop platforms using MT5."
+    },
+    {
+      icon: <Code className="h-8 w-8 text-primary" />,
+      title: "Algo trading",
+      description: "MT5 customization",
+      details: "Endless algo trading customization with MT5 - automate and scale your strategies."
     }
   ];
+
 
   return (
     <section className="py-20">
@@ -68,7 +82,13 @@ const Features = () => {
             Why Choose <span className="text-primary">CFDUP?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experience the advantages of trading with a trusted global broker
+            Trade in{" "}
+            <span className="font-semibold text-primary">Gold</span>,{" "}
+            <span className="font-semibold text-primary">Crypto</span>,{" "}
+            <span className="font-semibold text-primary">Oil</span>,{" "}
+            <span className="font-semibold text-primary">Forex</span>{" "}
+            <span className="text-muted-foreground">and</span>{" "}
+            <span className="font-semibold text-primary">Indices</span> with industry-leading features.
           </p>
         </motion.div>
 
