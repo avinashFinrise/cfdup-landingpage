@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-4 w-4 text-primary" />
-                  <span className="text-sm text-muted-foreground">London, United Kingdom</span>
+                  <span className="text-sm text-muted-foreground">SAINT LUCIA</span>
                 </div>
               </div>
             </div>
@@ -175,9 +175,14 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="border-t border-border py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-muted-foreground">
-              © 2025 CFDUP. All rights reserved.
-            </div>
+<div className="text-sm text-muted-foreground text-center md:text-left">
+  © 2025 CFDUP. All rights reserved.
+  <br />
+  <span className="text-xs text-muted-foreground/80">
+    Registration No: 2025-00667
+  </span>
+</div>
+
             
             {/* Social Links */}
             <div className="flex items-center space-x-4">
