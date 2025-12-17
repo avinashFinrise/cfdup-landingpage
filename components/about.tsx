@@ -1,8 +1,8 @@
 "use client"
 
-import { motion } from 'framer-motion';
-import { Shield, Award, Globe, Users } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { motion } from 'framer-motion';
+import { Award, Globe, Shield, Users } from 'lucide-react';
 
 const About = () => {
   const values = [
@@ -40,7 +40,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground mb-8">
-            <span className="text-primary">ABOUT CFDUP</span>
+            <span className="text-primary">ABOUT Omix Capital</span>
           </h2>
         </motion.div>
 
@@ -60,7 +60,7 @@ const About = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                CFDUP was founded with one mission: to empower traders of all levels with world-class 
+                Omix Capital was founded with one mission: to empower traders of all levels with world-class 
                 technology, competitive pricing, and unmatched support. Our vision is to make CFD trading 
                 transparent, fast, and accessible to everyone.
               </p>

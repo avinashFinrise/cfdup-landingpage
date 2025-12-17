@@ -1,10 +1,10 @@
 "use client"
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { ThemeToggle } from '@/components/ui/theme-toggle';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,12 +47,13 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
           >
             <div className="flex items-center space-x-2">
-              <div className="bg-primary rounded-md p-1">
-                <TrendingUp className="h-6 w-6 text-primary-foreground" />
+            <Image height={100} width={150} alt='logo' src="/logo.png" className="text-primary-foreground" />
+              {/* <div className="bg-primary rounded-md p-1">
+                
               </div>
               <span className="font-poppins font-bold text-xl text-foreground">
-                CFDUP
-              </span>
+                Omix Capital
+              </span> */}
             </div>
           </motion.div>
 

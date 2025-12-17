@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from 'framer-motion';
-import { TrendingUp, Mail, Phone, MapPin, Twitter, Facebook, Linkedin, Instagram } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   const footerLinks = {
@@ -52,15 +53,10 @@ const Footer = () => {
                 className="mb-6"
               >
                 <div className="flex items-center space-x-2 mb-4">
-                  <div className="bg-primary rounded-md p-1">
-                    <TrendingUp className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <span className="font-poppins font-bold text-xl text-foreground">
-                    CFDUP
-                  </span>
+                  <Image height={100} width={150} alt='logo' src="/logo.png" className="text-primary-foreground" />
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Your trusted partner in global CFD trading. Trade smarter, faster, and more efficiently with CFDUP.
+                  Your trusted partner in global CFD trading. Trade smarter, faster, and more efficiently with Omix Capital.
                 </p>
               </motion.div>
 
@@ -68,7 +64,7 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-primary" />
-                  <span className="text-sm text-muted-foreground">support@cfdup.com</span>
+                  <span className="text-sm text-muted-foreground">support@Omix Capital.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-primary" />
@@ -176,7 +172,7 @@ const Footer = () => {
         <div className="border-t border-border py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
 <div className="text-sm text-muted-foreground text-center md:text-left">
-  © 2025 CFDUP. All rights reserved.
+  © 2025 Omix Capital. All rights reserved.
   <br />
   <span className="text-xs text-muted-foreground/80">
     Registration No: 2025-00667

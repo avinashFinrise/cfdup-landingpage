@@ -2,14 +2,14 @@
 
 import { motion } from 'framer-motion';
 import {
-  Target,
-  RefreshCw,
   BarChart2,
   Clock,
-  Shield,
+  Code,
   Headphones,
   Monitor,
-  Code
+  RefreshCw,
+  Shield,
+  Target
 } from "lucide-react";
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -79,7 +79,7 @@ const Features = () => {
           className="text-center mb-16"
         >
           <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
-            Why Choose <span className="text-primary">CFDUP?</span>
+            Why Choose <span className="text-primary">Omix Capital?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Trade in{" "}

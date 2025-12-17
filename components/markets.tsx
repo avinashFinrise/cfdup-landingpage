@@ -1,9 +1,8 @@
 "use client"
 
-import { motion } from 'framer-motion';
-import { TrendingUp, BarChart3, Coins, Building2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { motion } from 'framer-motion';
+import { BarChart3, Building2, Coins, TrendingUp } from 'lucide-react';
 import Chart from './Chart';
 
 const Markets = () => {
@@ -34,7 +33,7 @@ const Markets = () => {
           <h2 className="font-poppins font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
             Trade Global Markets
             <br />
-            <span className="text-primary">with CFDUP</span>
+            <span className="text-primary">with Omix Capital</span>
           </h2>
         </motion.div>
 

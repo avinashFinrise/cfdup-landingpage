@@ -1,7 +1,7 @@
-import './globals.css';
+import { ThemeProvider } from '@/components/theme-provider';
 import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
+import './globals.css';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -17,26 +17,26 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'CFDUP - Trade Global Markets with Confidence',
+  title: 'Omix Capital - Trade Global Markets with Confidence',
   description: 'Your trusted partner in global CFD trading. Access Forex, Indices, Commodities, and Stocks with ultra-tight spreads and up to 1:500 leverage.',
   keywords: 'CFD trading, Forex, trading platform, global markets, financial trading, MT5, WebTrader',
-  authors: [{ name: 'CFDUP' }],
-  creator: 'CFDUP',
-  publisher: 'CFDUP',
+  authors: [{ name: 'Omix Capital' }],
+  creator: 'Omix Capital',
+  publisher: 'Omix Capital',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://cfdup.com'),
+  metadataBase: new URL('https://omixcapital.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'CFDUP - Trade Global Markets with Confidence',
+    title: 'Omix Capital - Trade Global Markets with Confidence',
     description: 'Your trusted partner in global CFD trading. Access Forex, Indices, Commodities, and Stocks with ultra-tight spreads and up to 1:500 leverage.',
     url: '/',
-    siteName: 'CFDUP',
+    siteName: 'Omix Capital',
     locale: 'en_US',
     type: 'website',
     images: [
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'CFDUP Trading Platform',
+        alt: 'Omix Capital Trading Platform',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CFDUP - Trade Global Markets with Confidence',
+    title: 'Omix Capital - Trade Global Markets with Confidence',
     description: 'Your trusted partner in global CFD trading. Access Forex, Indices, Commodities, and Stocks with ultra-tight spreads and up to 1:500 leverage.',
     images: ['/og-image.jpg'],
   },

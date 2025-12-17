@@ -1,8 +1,8 @@
 "use client"
 
-import { motion } from 'framer-motion';
-import { ArrowRight, Play, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
+import { ArrowRight, CheckCircle, Play } from 'lucide-react';
 
 const Hero = () => {
   const features = [
@@ -44,7 +44,7 @@ const Hero = () => {
               <br />
               Trade with{' '}
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                CFDUP
+                Omix Capital
               </span>
             </h1>
 
