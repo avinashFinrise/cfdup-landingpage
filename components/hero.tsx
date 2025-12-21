@@ -9,7 +9,7 @@ const Hero = () => {
     'Ultra-Low Spreads Starting from 0.0 pips',
     'High Leverage Up to 1:500',
     'Fast Execution Millisecond order processing',
-    'Trusted Platforms MT5 + Proprietary',
+    'Trusted Platforms MT5',
     'Instant Deposits & Withdrawals',
     'Fast Execution Millisecond order processing'
   ];
@@ -70,8 +70,7 @@ const Hero = () => {
             <span className="font-semibold text-primary">Forex</span>,{' '}
             <span className="font-semibold text-primary">Indices</span>,{' '}
             <span className="font-semibold text-primary">Commodities</span>, and{' '}
-            <span className="font-semibold text-primary">Stocks</span> on MT5 and our
-            proprietary WebTrader with ultra-tight spreads and up to <span className="font-semibold text-primary">1:500</span> leverage.
+            <span className="font-semibold text-primary">Stocks</span> on MT5 with ultra-tight spreads and up to <span className="font-semibold text-primary">1:500</span> leverage.
           </motion.p>
 
           {/* CTA Buttons */}

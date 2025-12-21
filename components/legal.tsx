@@ -1,8 +1,8 @@
 "use client"
 
-import { motion } from 'framer-motion';
-import { FileText, Shield, AlertTriangle, Users } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { motion } from 'framer-motion';
+import { AlertTriangle, FileText, Shield, Users } from 'lucide-react';
 
 const Legal = () => {
   const legalItems = [
@@ -87,19 +87,23 @@ const Legal = () => {
             <CardContent className="p-8">
               <div className="prose prose-invert max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                  incididunt ut labore et dolore magna aliqua.
+                  The information provided on this website is for general informational purposes only and does not
+                  constitute investment advice, financial advice, trading advice, or a recommendation to engage in
+                  any investment strategy or transaction.
                 </p>
-                
+
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Nulla facilisi. Duis ante metus, bibendum ut, iunctis, pharetricdre hendrerit. 
-                  Phasec lisan pede. Albin rude sollicitudin.
+                  Omix Capital does not guarantee the accuracy, completeness, or timeliness of the information
+                  presented and shall not be held liable for any losses or damages arising directly or indirectly
+                  from the use of this website or reliance on its content.
                 </p>
-                
+
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Duis ante ipsum dolor sed et ex eliit amet, tempete. Petroliam maxsuccris aman ante 
-                  ligula ibioro. poustiere er wfectus
+                  Users are solely responsible for their investment decisions and should seek independent
+                  professional advice before participating in any financial activity. Access to services may be
+                  restricted in certain jurisdictions in accordance with applicable laws and regulations.
                 </p>
+
                 
                 <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
                   <p className="text-destructive font-medium text-sm">

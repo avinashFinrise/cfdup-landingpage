@@ -1,9 +1,9 @@
 "use client"
 
-import { motion } from 'framer-motion';
-import { Monitor, Smartphone, Download, ExternalLink, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { motion } from 'framer-motion';
+import { Download, ExternalLink, Monitor, Smartphone } from 'lucide-react';
 
 const Platforms = () => {
   const platforms = [
@@ -144,7 +144,7 @@ const Platforms = () => {
         </div>
 
         {/* Additional Info */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -165,7 +165,7 @@ const Platforms = () => {
               </div>
             </CardContent>
           </Card>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
