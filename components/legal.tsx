@@ -10,16 +10,19 @@ const Legal = () => {
       icon: <FileText className="h-6 w-6 text-primary" />,
       title: 'Terms & Conditions',
       description: 'Complete terms of service and platform usage guidelines',
+      links: [{ text: "terms", href: "/docs/TERMS.pdf" }]
     },
     {
       icon: <Shield className="h-6 w-6 text-primary" />,
       title: 'Privacy Policy',
-      description: 'How we protect and handle your personal information'
+      description: 'How we protect and handle your personal information',
+      links: [{ text: "privacy policy", href: "/docs/PRIVACY POLICY.pdf" }]
     },
     {
       icon: <AlertTriangle className="h-6 w-6 text-primary" />,
       title: 'Risk Disclosure',
-      description: 'Important information about trading risks and capital protection'
+      description: 'Important information about trading risks and capital protection',
+      links: [{ text: "risk disclosure", href: "/docs/risk disclosure.pdf" }]
     },
     {
       icon: <Users className="h-6 w-6 text-primary" />,
