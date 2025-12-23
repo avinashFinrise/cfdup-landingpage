@@ -81,35 +81,45 @@ const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
             <Button 
-          
-          
-              size="lg" 
-              className="font-poppins font-medium uppercase text-sm px-8 py-6 shadow-2xl hover:shadow-primary/25 transition-all duration-300 animate-pulse-glow"
-            >
-              <a href='https://www.metatrader5.com/en/download' target='_blank' rel='noopener noreferrer'>
-              Open Live Account
-              <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
+  size="lg" 
+  className="font-poppins font-medium uppercase text-sm px-8 py-6 shadow-2xl hover:shadow-primary/25 transition-all duration-300 animate-pulse-glow"
+>
+  <a
+    href="https://www.metatrader5.com/en/download"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center whitespace-nowrap"
+  >
+    Open Live Account
+    <ArrowRight className="ml-2 h-5 w-5 shrink-0" />
+  </a>
+</Button>
+
             
             <Button 
-              variant="outline" 
-              size="lg" 
-              className="font-poppins font-medium px-8 py-6 hover:bg-secondary/80 transition-all duration-300"
-            >
-              <a href='https://www.metatrader5.com/en/download' target='_blank' rel='noopener noreferrer'>
-              <Play className="mr-2 h-5 w-5" />
-              Try Demo Account
-              </a>
-            </Button>
-            
+  variant="outline" 
+  size="lg" 
+  className="font-poppins font-medium px-8 py-6 hover:bg-secondary/80 transition-all duration-300"
+>
+  <a
+    href="https://www.metatrader5.com/en/download"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center whitespace-nowrap"
+  >
+    <Play className="mr-2 h-5 w-5 shrink-0" />
+    Try Demo Account
+  </a>
+</Button>
+
+{/*             
             <Button 
               variant="ghost" 
               size="lg" 
               className="font-poppins font-medium px-8 py-6"
             >
               Request a Callback
-            </Button>
+            </Button> */}
           </motion.div>
 
           {/* Features Grid */}
