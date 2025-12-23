@@ -14,7 +14,8 @@ const Platforms = () => {
       icon: <Monitor className="h-8 w-8 text-primary" />,
       features: ['Advanced charting', 'Expert advisors', 'Multiple timeframes'],
       button: 'Download MT5',
-      buttonIcon: <Download className="h-4 w-4" />
+      buttonIcon: <Download className="h-4 w-4" />,
+      href: "https://download.mql5.com/cdn/web/metaquotes.ltd/mt5/mt5setup.exe?utm_source=www.metatrader5.com&utm_campaign=download"
     },
     {
       title: 'WebTrader',
@@ -23,7 +24,8 @@ const Platforms = () => {
       icon: <ExternalLink className="h-8 w-8 text-primary" />,
       features: ['Browser-based', 'Instant access', 'Full functionality'],
       button: 'Launch WebTrader',
-      buttonIcon: <ExternalLink className="h-4 w-4" />
+      buttonIcon: <ExternalLink className="h-4 w-4" />,
+      href: "https://web.metatrader.app/terminal?lang=en"
     },
     {
       title: 'Mobile Trading',
@@ -32,7 +34,8 @@ const Platforms = () => {
       icon: <Smartphone className="h-8 w-8 text-primary" />,
       features: ['Push notifications', 'Touch ID login', 'Full trading suite'],
       button: 'Get Mobile App',
-      buttonIcon: <Download className="h-4 w-4" />
+      buttonIcon: <Download className="h-4 w-4" />,
+      href: "https://download.mql5.com/cdn/mobile/mt5/android?hl=en&utm_source=www.metatrader5.com&utm_campaign=install.metaquotes"
     }
   ];
 
@@ -133,10 +136,12 @@ const Platforms = () => {
                     ))}
                   </div>
                   
+                    <a href={platform.href} target="_blank" rel="noopener noreferrer">
                   <Button className="w-full font-poppins font-medium">
-                    {platform.buttonIcon}
-                    <span className="ml-2">{platform.button}</span>
+                      {platform.buttonIcon}
+                      <span className="ml-2">{platform.button}</span>
                   </Button>
+                    </a>
                 </CardContent>
               </Card>
             </motion.div>

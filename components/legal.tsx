@@ -9,11 +9,11 @@ const Legal = () => {
     {
       icon: <FileText className="h-6 w-6 text-primary" />,
       title: 'Terms & Conditions',
-      description: 'Complete terms of service and platform usage guidelines'
+      description: 'Complete terms of service and platform usage guidelines',
     },
     {
       icon: <Shield className="h-6 w-6 text-primary" />,
-      title: 'Privacy Policy', 
+      title: 'Privacy Policy',
       description: 'How we protect and handle your personal information'
     },
     {
@@ -24,7 +24,8 @@ const Legal = () => {
     {
       icon: <Users className="h-6 w-6 text-primary" />,
       title: 'AML / KYC',
-      description: 'Anti-money laundering and know your customer policies'
+      description: 'Anti-money laundering and know your customer policies',
+      links: [{ text: "aml", href: "/docs/AML Omix.pdf" }, { text: "kyc", href: "/docs/KYC POLICY.pdf" }, { text: "Crypto MT5 KYC Guidelines", href: "/docs/crypto mt5 AML.pdf" }]
     }
   ];
 
@@ -67,9 +68,37 @@ const Legal = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center pt-0">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground mb-4">
                     {item.description}
                   </p>
+
+                  {item.links && (
+                    <div className="flex justify-center gap-2 flex-wrap">
+                      {item.links.map((link, i) => (
+                        <a
+                          key={i}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="
+            inline-flex items-center gap-1.5
+            px-3 py-1.5
+            text-xs font-medium
+            rounded-full
+            border border-border
+            bg-background/60
+            text-primary
+            hover:bg-primary/10
+            hover:border-primary/30
+            transition-all
+          "
+                        >
+                          <FileText className="h-3.5 w-3.5" />
+                          {link.text.toUpperCase()}
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
@@ -104,10 +133,10 @@ const Legal = () => {
                   restricted in certain jurisdictions in accordance with applicable laws and regulations.
                 </p>
 
-                
+
                 <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
                   <p className="text-destructive font-medium text-sm">
-                    CFDs are complex instruments and come with a high risk of losing money rapidly due 
+                    CFDs are complex instruments and come with a high risk of losing money rapidly due
                     to leverage Learn more
                   </p>
                 </div>

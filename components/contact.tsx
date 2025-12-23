@@ -1,14 +1,13 @@
 "use client"
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -147,7 +146,7 @@ const Contact = () => {
         </motion.div>
 
         {/* Live Chat Button */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -161,7 +160,7 @@ const Contact = () => {
             <MessageCircle className="mr-2 h-5 w-5" />
             Live Chat
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
