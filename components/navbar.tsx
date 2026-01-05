@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const Navbar = () => {
@@ -23,6 +24,7 @@ const Navbar = () => {
     { label: 'About', href: '/about' },
     { label: 'Platforms', href: '/#platforms' },
     { label: 'Accounts', href: '/#accounts' },
+    { label: 'Pricing', href: '/pricing' },
     { label: 'Markets', href: '/#markets' },
     { label: 'Contact', href: '/#contact' },
   ];
@@ -46,7 +48,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <div className="flex items-center space-x-2">
+            <Link href='/' className="flex items-center space-x-2">
             <Image height={100} width={150} alt='logo' src="/logo.png" className="text-primary-foreground" />
               {/* <div className="bg-primary rounded-md p-1">
                 
@@ -54,7 +56,7 @@ const Navbar = () => {
               <span className="font-poppins font-bold text-xl text-foreground">
                 Omix Capital
               </span> */}
-            </div>
+            </Link>
           </motion.div>
 
           {/* Desktop Menu */}
