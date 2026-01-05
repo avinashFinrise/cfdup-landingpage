@@ -6,17 +6,21 @@ import { ArrowDown, ShieldCheck, Target, Users } from "lucide-react"
 const AboutHero = () => {
   const highlights = [
     {
-      icon: <ShieldCheck className="h-5 w-5 text-primary" />,
-      text: "Built on trust & transparency",
+      text: "Guarantee Payouts",
+      icon: <ShieldCheck className="w-6 h-6 text-primary" />,
     },
     {
-      icon: <Target className="h-5 w-5 text-primary" />,
-      text: "Mission-driven platform design",
+      text: "Unrestricted News Trading",
+      icon: <Users className="w-6 h-6 text-primary" />,
     },
     {
-      icon: <Users className="h-5 w-5 text-primary" />,
-      text: "Focused on real client outcomes",
+      text: "No Consistency Rules",
+      icon: <Target className="w-6 h-6 text-primary" />,
     },
+    { 
+      text: "Beginner to Pro Friendly",
+      icon: <ArrowDown className="w-6 h-6 text-primary" />,
+    }
   ]
 
   return (
@@ -25,7 +29,7 @@ const AboutHero = () => {
       <div className="absolute inset-0 bg-hero-pattern" />
       <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/60 to-secondary/30" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div className="relative z-10 max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           {/* Pre-heading */}
           <motion.p
@@ -34,7 +38,7 @@ const AboutHero = () => {
             transition={{ duration: 0.6 }}
             className="text-sm sm:text-base uppercase tracking-wide text-muted-foreground mb-3"
           >
-            About Omix Capital
+            Omix Capital Proprietary Trading
           </motion.p>
 
           {/* Main Heading */}
@@ -44,10 +48,10 @@ const AboutHero = () => {
             transition={{ duration: 0.8 }}
             className="font-poppins font-bold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight mb-6"
           >
-            Building the foundation for
+            Your Shortcut to
             <br />
             <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              smarter, transparent decisions
+              Trading Capital
             </span>
           </motion.h1>
 
@@ -58,9 +62,7 @@ const AboutHero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed"
           >
-            Omix Capital helps organizations transform ideas into structured,
-            funder-ready programs through clarity, alignment, and intelligent
-            systems.
+            FundedReady backs confident, disciplined traders with real capital and real opportunities
           </motion.p>
 
           {/* Highlights */}
@@ -68,7 +70,7 @@ const AboutHero = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto mb-14"
+            className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto mb-14 justify-items-center items-center"
           >
             {highlights.map((item, index) => (
               <div

@@ -13,7 +13,7 @@ const About = () => {
     },
     {
       icon: <Award className="h-6 w-6 text-primary" />,
-      title: 'Innovation',
+      title: 'Innovation', 
       description: 'Cutting-edge trading technology'
     },
     {
@@ -28,23 +28,6 @@ const About = () => {
     }
   ];
 
-  const whatWeDo = [
-    {
-      title: "Program Builder",
-      description: "Transform ideas into fundable programs",
-      icon: <Award className="h-6 w-6 text-primary" />,
-    },
-    {
-      title: "AI Cherence Engine",
-      description: "Align mission, budget, and outcomes",
-      icon: <Globe className="h-6 w-6 text-primary" />,
-    },
-    {
-      title: "impact & Budget Framework",
-      description: "Design matrics & funder-ready budgets",
-      icon: <Shield className="h-6 w-6 text-primary" />,
-    }
-  ]
   return (
     <section id="about" className="py-20 bg-secondary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,8 +60,8 @@ const About = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                Omix Capital was founded with one mission: to empower traders of all levels with world-class
-                technology, competitive pricing, and unmatched support. Our vision is to make CFD trading
+                Omix Capital was founded with one mission: to empower traders of all levels with world-class 
+                technology, competitive pricing, and unmatched support. Our vision is to make CFD trading 
                 transparent, fast, and accessible to everyone.
               </p>
             </CardContent>
@@ -128,54 +111,6 @@ const About = () => {
           </motion.div>
         </div>
 
-        {/* What We Do */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mb-16"
-        >
-          <div className="text-center mb-10">
-            <h3 className="font-poppins font-bold text-2xl text-primary mb-2">
-              WHAT WE DO
-            </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Strategic Funding Preparedness
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {whatWeDo.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-              >
-                <Card className="h-full bg-card/30 border-border/50 hover:border-primary/30 transition-all duration-300">
-                  <CardContent className="p-6 text-center">
-                    <div className="flex justify-center mb-4">
-                      <div className="p-2 bg-primary/10 rounded-lg">
-                        {item.icon}
-                      </div>
-                    </div>
-                    <h4 className="font-poppins font-semibold text-foreground mb-2">
-                      {item.title}
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      {item.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-
         {/* Core Values */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -187,7 +122,7 @@ const About = () => {
           <h3 className="font-poppins font-bold text-2xl text-primary text-center mb-8">
             CORE VALUES
           </h3>
-
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
               <motion.div

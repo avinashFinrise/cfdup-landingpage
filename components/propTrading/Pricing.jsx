@@ -1,8 +1,8 @@
 "use client"
 
-import PricingCard from "@/components/pricing/PricingCard"
 import { motion } from "framer-motion"
 import { useState } from "react"
+import PricingCard from "./PricingCard"
 
 const pricingData = {
   "5k": {
@@ -34,7 +34,7 @@ const pricingData = {
 const accountSizes = ["5k", "15k", "25k", "50k", "100k", "200k"]
 
 
-export default function PricingPage() {
+export default function Pricing() {
   const [activeSize, setActiveSize] = useState(accountSizes[0])
   const data = pricingData[activeSize]
 

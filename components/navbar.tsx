@@ -21,10 +21,10 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { label: 'About', href: '/about' },
+    { label: 'About', href: '/#about' },
     { label: 'Platforms', href: '/#platforms' },
     { label: 'Accounts', href: '/#accounts' },
-    { label: 'Pricing', href: '/pricing' },
+    { label: 'Proprietary Trading', href: '/proprietary-trading' },
     { label: 'Markets', href: '/#markets' },
     { label: 'Contact', href: '/#contact' },
   ];
