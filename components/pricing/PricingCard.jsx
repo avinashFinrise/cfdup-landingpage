@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import Link from "next/link"
 import { AnimatedNumber } from "../ui/AnimatedNumber"
 
 
@@ -31,16 +32,19 @@ const PricingCard = ({ step, price, highlight }) => {
         Risk Reward Matters
       </p>
 
-      <Button
-        size="lg"
-        className={`w-full rounded-full mb-8 font-medium
-          ${highlight
-            ? "bg-white text-primary hover:bg-white/90"
-            : "bg-primary hover:bg-primary/90"}
-        `}
-      >
-        Choose {step} Plan
-      </Button>
+      <Link href="/about">
+        <Button
+            size="lg"
+            className={`w-full rounded-full mb-8 font-medium
+            ${highlight
+                ? "bg-white text-primary hover:bg-white/90"
+                : "bg-primary hover:bg-primary/90"}
+            `}
+        >
+            Choose {step} Plan
+            
+        </Button>
+      </Link>
 
       <div className="space-y-4 text-sm">
         {[

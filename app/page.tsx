@@ -1,6 +1,5 @@
 "use client"
 
-import About from '@/components/about';
 import Accounts from '@/components/accounts';
 import Contact from '@/components/contact';
 import Features from '@/components/features';
@@ -45,7 +44,7 @@ export default function Home() {
       <Accounts />
       <Platforms />
       <Markets />
-      <About />
+      {/* <About /> */}
       <Contact />
       <Legal />
     </>
