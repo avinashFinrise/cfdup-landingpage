@@ -20,11 +20,11 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { label: 'About', href: '#about' },
-    { label: 'Platforms', href: '#platforms' },
-    { label: 'Accounts', href: '#accounts' },
-    { label: 'Markets', href: '#markets' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'About', href: '/about' },
+    { label: 'Platforms', href: '/#platforms' },
+    { label: 'Accounts', href: '/#accounts' },
+    { label: 'Markets', href: '/#markets' },
+    { label: 'Contact', href: '/#contact' },
   ];
 
   return (

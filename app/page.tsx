@@ -1,16 +1,14 @@
 "use client"
 
-import { useEffect } from 'react';
-import Navbar from '@/components/navbar';
-import Hero from '@/components/hero';
-import Features from '@/components/features';
-import Accounts from '@/components/accounts';
-import Platforms from '@/components/platforms';
-import Markets from '@/components/markets';
 import About from '@/components/about';
+import Accounts from '@/components/accounts';
 import Contact from '@/components/contact';
+import Features from '@/components/features';
+import Hero from '@/components/hero';
 import Legal from '@/components/legal';
-import Footer from '@/components/footer';
+import Markets from '@/components/markets';
+import Platforms from '@/components/platforms';
+import { useEffect } from 'react';
 
 export default function Home() {
   useEffect(() => {
@@ -41,8 +39,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-background">
-      <Navbar />
+    <>
       <Hero />
       <Features />
       <Accounts />
@@ -51,7 +48,6 @@ export default function Home() {
       <About />
       <Contact />
       <Legal />
-      <Footer />
-    </main>
+    </>
   );
 }

@@ -1,3 +1,5 @@
+import Footer from '@/components/footer';
+import Navbar from '@/components/navbar';
 import { ThemeProvider } from '@/components/theme-provider';
 import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
@@ -88,7 +90,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main className="min-h-screen bg-background">
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
         </ThemeProvider>
       </body>
     </html>
