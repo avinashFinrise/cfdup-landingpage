@@ -85,7 +85,7 @@ const AboutHero = () => {
             ))}
           </motion.div>
 
-          {/* Scroll Indicator */}
+          {/* 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -102,7 +102,7 @@ const AboutHero = () => {
               </span>
               <ArrowDown className="h-5 w-5" />
             </motion.div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 
