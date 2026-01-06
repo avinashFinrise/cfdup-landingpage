@@ -8,7 +8,7 @@ const steps = [
     step: "Step 1",
     title: "Sign Up",
     description:
-      "Create your account on FundedReady.com in just a few clicks. Provide basic details like your name, email, and phone number to get started.",
+      "Create your account on OmixCapital.com in just a few clicks. Provide basic details like your name, email, and phone number to get started.",
     icon: UserPlus,
   },
   {
@@ -49,10 +49,10 @@ export default function HowToGetFunded() {
           className="mb-16 max-w-3xl"
         >
           <h2 className="font-poppins font-bold text-4xl mb-4">
-            How to Get Funded with FundedReady
+            How to Get Funded with OmixCapital
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Getting started with a FundedReady account is quick and hassle-free.
+            Getting started with a OmixCapital account is quick and hassle-free.
             We provide real trading capital to skilled traders — you focus on
             trading, we handle the rest.
           </p>

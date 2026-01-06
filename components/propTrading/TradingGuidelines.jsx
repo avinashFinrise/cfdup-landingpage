@@ -54,10 +54,10 @@ export default function TradingGuidelines() {
           className="mb-16"
         >
           <h2 className="font-poppins font-bold text-4xl mb-4">
-            FundedReady Trading Guidelines
+            OmixCapital Trading Guidelines
           </h2>
           <p className="text-muted-foreground max-w-4xl leading-relaxed">
-            At FundedReady, our mission is to empower traders by providing a
+            At OmixCapital, our mission is to empower traders by providing a
             structured and disciplined trading environment. Our guidelines are
             designed to promote responsible trading practices, protect capital,
             and foster long-term success.
@@ -196,7 +196,7 @@ export default function TradingGuidelines() {
           {/* Closing */}
           <p className="text-sm text-muted-foreground max-w-4xl">
             By adhering to these guidelines, you contribute to a fair and secure
-            trading environment for all FundedReady participants. We are
+            trading environment for all OmixCapital participants. We are
             committed to supporting your trading journey and celebrating your
             successes.
           </p>

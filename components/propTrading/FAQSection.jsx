@@ -10,14 +10,14 @@ import { motion } from "framer-motion"
 
 const faqs = [
   {
-    q: "What is FundedReady?",
-    a: "FundedReady is a proprietary trading firm that provides traders with access to real capital. By passing our evaluation process, traders can manage funded accounts and retain a significant portion of the profits they generate.",
+    q: "What is OmixCapital?",
+    a: "OmixCapital is a proprietary trading firm that provides traders with access to real capital. By passing our evaluation process, traders can manage funded accounts and retain a significant portion of the profits they generate.",
   },
   {
-    q: "What advantages does FundedReady offer to traders?",
+    q: "What advantages does OmixCapital offer to traders?",
     a: (
         <>
-            <p className="text-sm" >FundedReady offers:</p>
+            <p className="text-sm" >OmixCapital offers:</p>
             <ul className="list-disc list-inside mt-2 space-y-1 text-sm">
                 <li>Guaranteed payouts upon meeting profit targets.</li>
                 <li>Permission to trade during high-impact news events.</li>
@@ -28,11 +28,11 @@ const faqs = [
     ),
   },
   {
-    q: "Which financial markets can I access through FundedReady?",
+    q: "Which financial markets can I access through OmixCapital?",
     a: "You can trade various markets, including Forex, commodities, indices, and cryptocurrencies.",
   },
   {
-    q: "How does the profit-sharing model work at FundedReady?",
+    q: "How does the profit-sharing model work at OmixCapital?",
     a: "After meeting the profit targets, you are entitled to a significant share of the profits, with the exact percentage depending on your account type.",
   },
   {
@@ -41,7 +41,7 @@ const faqs = [
         <>
             <p className="text-sm" >The process includes:</p>
             <ol className="list-disc list-inside mt-2 space-y-1 text-sm">
-                <li>Signing up on FundedReady.com.</li>
+                <li>Signing up on OmixCapital.com.</li>
                 <li>Selecting and purchasing an evaluation challenge.</li>
                 <li>Meeting the specified trading criteria.</li>
                 <li>Receiving a funded account upon successful completion.</li>

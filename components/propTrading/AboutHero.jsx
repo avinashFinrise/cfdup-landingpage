@@ -62,7 +62,7 @@ const AboutHero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed"
           >
-            FundedReady backs confident, disciplined traders with real capital and real opportunities
+            OmixCapital backs confident, disciplined traders with real capital and real opportunities
           </motion.p>
 
           {/* Highlights */}
