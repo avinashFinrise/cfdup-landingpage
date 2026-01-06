@@ -6,7 +6,7 @@ import { ArrowDown, ShieldCheck, Target, Users } from "lucide-react"
 const AboutHero = () => {
   const highlights = [
     {
-      text: "Guarantee Payouts",
+      text: "Guaranteed Payouts",
       icon: <ShieldCheck className="w-6 h-6 text-primary" />,
     },
     {
