@@ -14,11 +14,11 @@ const AboutHero = () => {
       icon: <Users className="w-6 h-6 text-primary" />,
     },
     {
-      text: "No Consistency Rules",
+      text: "No strict Consistency Rules",
       icon: <Target className="w-6 h-6 text-primary" />,
     },
     { 
-      text: "Beginner to Pro Friendly",
+      text: "Beginner-Friendly to Professional",
       icon: <ArrowDown className="w-6 h-6 text-primary" />,
     }
   ]

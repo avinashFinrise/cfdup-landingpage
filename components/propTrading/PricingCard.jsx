@@ -29,7 +29,7 @@ const PricingCard = ({ step, price, highlight }) => {
       </h3>
 
       <p className={`mb-6 ${highlight ? "text-white/90" : "text-muted-foreground"}`}>
-        Risk Reward Matters
+        Risk-Reward Challenge Structure
       </p>
 
       <Link href="/about">
