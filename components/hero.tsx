@@ -19,7 +19,7 @@ const Hero = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-hero-pattern"></div>
       <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/50 to-secondary/30"></div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           {/* Main Heading + New Taglines */}
@@ -80,39 +80,39 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
-            <Button 
-  size="lg" 
-  className="font-poppins font-medium uppercase text-sm px-8 py-6 shadow-2xl hover:shadow-primary/25 transition-all duration-300 animate-pulse-glow"
->
-  <a
-    href="https://www.metatrader5.com/en/download"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center whitespace-nowrap"
-  >
-    Open Live Account
-    <ArrowRight className="ml-2 h-5 w-5 shrink-0" />
-  </a>
-</Button>
+            <Button
+              size="lg"
+              className="font-poppins font-medium uppercase text-sm px-8 py-6 shadow-2xl hover:shadow-primary/25 transition-all duration-300 animate-pulse-glow"
+            >
+              <a
+                href="https://crm.omixcapital.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center whitespace-nowrap"
+              >
+                Open Live Account
+                <ArrowRight className="ml-2 h-5 w-5 shrink-0" />
+              </a>
+            </Button>
 
-            
-            <Button 
-  variant="outline" 
-  size="lg" 
-  className="font-poppins font-medium px-8 py-6 hover:bg-secondary/80 transition-all duration-300"
->
-  <a
-    href="https://www.metatrader5.com/en/download"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center whitespace-nowrap"
-  >
-    <Play className="mr-2 h-5 w-5 shrink-0" />
-    Try Demo Account
-  </a>
-</Button>
 
-{/*             
+            <Button
+              variant="outline"
+              size="lg"
+              className="font-poppins font-medium px-8 py-6 hover:bg-secondary/80 transition-all duration-300"
+            >
+              <a
+                href="https://crm.omixcapital.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center whitespace-nowrap"
+              >
+                <Play className="mr-2 h-5 w-5 shrink-0" />
+                Try Demo Account
+              </a>
+            </Button>
+
+            {/*             
             <Button 
               variant="ghost" 
               size="lg" 
@@ -150,13 +150,13 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1.2 }}
             className="mt-12"
           >
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               variant="outline"
               className="font-poppins font-semibold uppercase text-sm px-12 py-6 hover:bg-primary hover:text-primary-foreground transition-all duration-300 group"
             >
-              <a href='https://www.metatrader5.com/en/download' target='_blank' rel='noopener noreferrer'>
-              Start Trading Today
+              <a href='https://crm.omixcapital.com/' target='_blank' rel='noopener noreferrer'>
+                Start Trading Today
               </a>
               <motion.div
                 className="ml-2"
@@ -173,7 +173,7 @@ const Hero = () => {
       {/* Floating Elements */}
       <motion.div
         className="absolute top-20 left-10 w-4 h-4 bg-primary/30 rounded-full"
-        animate={{ 
+        animate={{
           y: [0, -20, 0],
           scale: [1, 1.2, 1],
           opacity: [0.3, 0.8, 0.3]
@@ -182,7 +182,7 @@ const Hero = () => {
       />
       <motion.div
         className="absolute bottom-40 right-20 w-6 h-6 bg-primary/20 rounded-full"
-        animate={{ 
+        animate={{
           y: [0, 20, 0],
           x: [0, 10, 0],
           scale: [1, 0.8, 1]
@@ -191,7 +191,7 @@ const Hero = () => {
       />
       <motion.div
         className="absolute top-1/2 right-10 w-3 h-3 bg-primary/40 rounded-full"
-        animate={{ 
+        animate={{
           rotate: [0, 360],
           scale: [1, 1.5, 1]
         }}

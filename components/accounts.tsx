@@ -1,9 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { CheckCircle, Star, Shield, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { CheckCircle, Shield, Star, Zap } from "lucide-react";
 
 
 const Accounts = () => {
@@ -234,7 +234,9 @@ const accounts = [
             size="lg"
             className="font-poppins font-medium uppercase text-sm px-12 py-6 shadow-xl hover:shadow-primary/25 transition-all duration-300 rounded-xl"
           >
+            <a href='https://crm.omixcapital.com/' target='_blank' rel='noopener noreferrer'>
             Open Live Account
+            </a>
           </Button>
 
           <Button
@@ -242,7 +244,9 @@ const accounts = [
             size="lg"
             className="font-poppins font-medium uppercase text-sm px-12 py-6 rounded-xl"
           >
+            <a href='https://crm.omixcapital.com/' target='_blank' rel='noopener noreferrer'>
             Try Demo
+            </a>
           </Button>
         </motion.div>
       </div>

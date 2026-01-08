@@ -79,12 +79,12 @@ const Navbar = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             <Button variant="outline" size="sm">
-              <a href='https://www.metatrader5.com/en/download' target='_blank' rel='noopener noreferrer'>
+              <a href='https://crm.omixcapital.com/' target='_blank' rel='noopener noreferrer'>
               Try Demo
               </a>
             </Button>
             <Button size="sm" className="font-poppins font-medium uppercase text-xs">
-              <a href='https://www.metatrader5.com/en/download' target='_blank' rel='noopener noreferrer'>
+              <a href='https://crm.omixcapital.com/' target='_blank' rel='noopener noreferrer'>
               Open Live Account
               </a>
             </Button>

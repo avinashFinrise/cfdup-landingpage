@@ -112,7 +112,7 @@ const Markets = () => {
             size="lg" 
             className="font-poppins font-medium uppercase text-sm px-12 py-6 shadow-xl hover:shadow-primary/25 transition-all duration-300"
           >
-            <a href='https://www.metatrader5.com/en/download' target='_blank' rel='noopener noreferrer'>
+            <a href='https://crm.omixcapital.com/' target='_blank' rel='noopener noreferrer'>
             Start Trading Today
             </a>
           </Button>
@@ -122,7 +122,7 @@ const Markets = () => {
             size="lg" 
             className="font-poppins font-medium uppercase text-sm px-12 py-6"
           >
-            <a href='https://www.metatrader5.com/en/download' target='_blank' rel='noopener noreferrer'>
+            <a href='https://crm.omixcapital.com/' target='_blank' rel='noopener noreferrer'>
             Open Live Account
             </a>
           </Button>
